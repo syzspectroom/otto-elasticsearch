@@ -5,5 +5,5 @@ application {
 
 customization "docker" {
   image = "elasticsearch"
-  run_args = "-p 9200:9200 -p 9300:9300"
+  run_args = "-p 9200:9200 -p 9300:9300 --net=host"
 }
